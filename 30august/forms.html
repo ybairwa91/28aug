@@ -6,14 +6,49 @@
     <title>html forms</title>
   </head>
   <body>
-    <form method="get" autocomplete="on">
+    <form autocomplete="on">
       <label for="Your-fName" name="your name">Your First Name</label> <br />
       <input type="text" id="Your-fName" /> <br />
 
       <label for="your-lName" name="your name">Your Last Name</label> <br />
       <input type="text" id="your-lName" /> <br />
-      <br /><br />
+      <label for="rst"></label>
+      <input type="reset" id="rst" /> <br /><br />
+      <hr />
 
+      <label for="psw">Password</label>
+      <input type="password" id="psw" />
+      <input type="submit" name="" id="" /> <br /><br />
+      <hr />
+      <!--  -->
+      <label for="clr">Color:</label>
+      <input type="Color" id="clr" />
+      <input type="submit" /> <br /><br />
+      <hr />
+      <!--  -->
+      <label for="dte">Date</label>
+      <input type="date" id="dte" />
+      <input type="submit" /> <br /><br />
+      <hr />
+      <!--  -->
+      <label for="dte">Date-Local</label>
+      <input type="datetime-local" id="dte" />
+      <input type="submit" /> <br /><br />
+      <hr />
+
+      <!-- min and max date -->
+      <label for="min">Date after 2000-01-01:</label>
+      <input type="date" id="min" min="2000-01-01" />
+      <br /><br /><br />
+      <label for="max">Date before 2010-10-10:</label>
+      <input type="date" id="max" max="2010-10-10" />
+      <br /><br />
+      <input type="submit" />
+
+      <br />
+      <hr />
+
+      <!-- input with predefined data -->
       <input type="text" list="numbers" />
       <datalist id="numbers">
         <option value="1"></option>
@@ -23,6 +58,8 @@
       <br />
       <input type="submit" />
       <br /><br />
+      <hr />
+
       <fieldset>
         <legend>Your personal information</legend>
         <label for="Your-fName" name="your name">Your First Name</label> <br />
@@ -35,6 +72,7 @@
       </fieldset>
 
       <br /><br />
+      <hr />
 
       <input type="radio" id="Yourage" name="mm" />
       <label for="Yourage">Your age-21</label> <br />
@@ -43,12 +81,14 @@
       <input type="radio" id="Yourage" name="mm" />
       <label for="Yourage">Your age-19</label> <br />
       <br /><br />
+      <hr />
 
       <input type="checkbox" id="yourknowit" name="knowledge" />
       <label for="youknowit">You know about it</label> <br />
       <input type="checkbox" id="yourdontknowit" name="knowledge" />
       <label for="youdontknowit">You dont know about it</label> <br />
       <br /><br />
+      <hr />
 
       <label for="cars">Choose a Car:</label>
       <select name="cars" id="cars" size="1" multiple>
@@ -60,16 +100,15 @@
 
       <br />
       <br /><br />
-
+      <hr />
       <textarea rows="2" cols="10">hello</textarea> <br />
       <input type="submit" />
 
       <br />
       <br /><br />
+      <hr />
 
       <button type="button">Click here</button>
-
-      inp
     </form>
   </body>
 </html>
