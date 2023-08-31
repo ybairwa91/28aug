@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html forms</title>
+  </head>
+  <body>
+    <form method="get" autocomplete="on">
+      <label for="Your-fName" name="your name">Your First Name</label> <br />
+      <input type="text" id="Your-fName" /> <br />
+
+      <label for="your-lName" name="your name">Your Last Name</label> <br />
+      <input type="text" id="your-lName" /> <br />
+      <br /><br />
+
+      <input type="text" list="numbers" />
+      <datalist id="numbers">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </datalist>
+      <br />
+      <input type="submit" />
+      <br /><br />
+      <fieldset>
+        <legend>Your personal information</legend>
+        <label for="Your-fName" name="your name">Your First Name</label> <br />
+        <input type="text" id="Your-fName" /> <br />
+
+        <label for="your-lName" name="your name">Your Last Name</label> <br />
+        <input type="text" id="your-lName" /> <br />
+
+        <input type="submit" />
+      </fieldset>
+
+      <br /><br />
+
+      <input type="radio" id="Yourage" name="mm" />
+      <label for="Yourage">Your age-21</label> <br />
+      <input type="radio" id="Yourage" name="mm" />
+      <label for="Yourage">Your age-20</label> <br />
+      <input type="radio" id="Yourage" name="mm" />
+      <label for="Yourage">Your age-19</label> <br />
+      <br /><br />
+
+      <input type="checkbox" id="yourknowit" name="knowledge" />
+      <label for="youknowit">You know about it</label> <br />
+      <input type="checkbox" id="yourdontknowit" name="knowledge" />
+      <label for="youdontknowit">You dont know about it</label> <br />
+      <br /><br />
+
+      <label for="cars">Choose a Car:</label>
+      <select name="cars" id="cars" size="1" multiple>
+        <option value="alto">alto</option>
+        <option value="volvo">Volvo</option>
+        <option value="bmw">bmw</option>
+        <option value="nano">Nano</option>
+      </select>
+
+      <br />
+      <br /><br />
+
+      <textarea rows="2" cols="10">hello</textarea> <br />
+      <input type="submit" />
+
+      <br />
+      <br /><br />
+
+      <button type="button">Click here</button>
+
+      inp
+    </form>
+  </body>
+</html>
